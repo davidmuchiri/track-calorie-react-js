@@ -1,0 +1,32 @@
+.btn {
+	border: none;
+	margin: 0;
+	padding: 0.5rem 1.5rem;
+	color: #fff;
+	background: $color_dark_green_01;
+	border-radius: 0.1rem;
+	border-bottom: 0.2rem solid
+		darken($color: $color_dark_green_01, $amount: 10%);
+	font-weight: 500;
+	font-size: 1.8rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	&:disabled {
+		opacity: 0.5;
+		cursor: default;
+	}
+	&__clear {
+		padding: 1rem 2rem;
+	}
+	&__edit {
+		background-color: $color_dark_yellow_01;
+		border-bottom: 0.2rem solid
+			darken($color: $color_dark_yellow_01, $amount: 10%);
+	}
+	&__back {
+		background-color: $color-dark_grey_02;
+		border-bottom: 0.2rem solid
+			darken($color: $color-dark_grey_02, $amount: 10%);
+	}
+}

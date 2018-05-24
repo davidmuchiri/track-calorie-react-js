@@ -1,0 +1,23 @@
+.icon {
+    height: 1.8rem;
+    width: 1.8rem;
+    cursor: pointer;
+    &__back,
+    &__update,
+    &__add {
+        margin-right: 0.3rem;
+        height: 1.6rem;
+        width: 1.6rem;
+    }
+    &__delete {
+        margin-left: 0.3rem;
+        height: 1.6rem;
+        width: 1.6rem;
+    }
+    &__edit {
+        fill: $color_dark_yellow_01;
+    }
+    &__close {
+        fill: $color_error_darker;
+    }
+}

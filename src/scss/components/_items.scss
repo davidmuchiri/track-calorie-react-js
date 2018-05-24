@@ -1,0 +1,38 @@
+.collection {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    &__item {
+        border: 1px solid #f4f4f4;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &:not(:last-of-type) {
+            border-bottom: none;
+        }
+        &--primary {
+            strong {
+                font-size: 2rem;
+                color: $color-dark_grey_01;
+                text-transform: capitalize;
+                margin-right: 1rem;
+            }
+            em {
+                color: $color-dark_grey_01;
+                font-weight: 400;
+                font-size: 1.8rem;
+            }
+        }
+        &--secondary {
+            width: 10%;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
+
+.edit__item {
+    background-color: $color_light_orange_01;
+    border-bottom: 0.2rem solid darken($color: $color_light_orange_01, $amount: 10%);
+}

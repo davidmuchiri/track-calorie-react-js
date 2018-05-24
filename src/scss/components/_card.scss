@@ -1,0 +1,15 @@
+.card {
+    width: 100%;
+    border: 1px solid #f4f4f4;
+    padding: 1rem;
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        color: $color_dark_grey_01;
+    }
+}

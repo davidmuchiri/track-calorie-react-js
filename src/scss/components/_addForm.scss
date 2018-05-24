@@ -1,0 +1,50 @@
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__error {
+        width: 100%;
+        background-color: $color_error;
+        color: #fff;
+        padding: 1rem 1rem;
+        margin-bottom: 1rem;
+        border-radius: 0.2rem;
+        font-weight: 500;
+    }
+    &__editState {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.food {
+    &__item {
+        flex-basis: 49%;
+        margin-bottom: 1rem;
+    }
+}
+
+.input {
+    &__field {
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid #f4f4f4;
+        border-radius: 0.2rem;
+        color: $color_dark_green_02;
+        font-weight: 400;
+        font-size: 1.8rem;
+        &::-webkit-input-placeholder {
+            font-weight: 400;
+            font-family: nunito;
+            color: $color_dark_green_02;
+            font-size: 1.8rem;
+        }
+    }
+    &__label {
+        color: $color_dark_grey_01;
+        font-weight: 500;
+        display: none;
+    }
+}
